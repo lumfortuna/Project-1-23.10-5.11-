@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=home.css.map */
