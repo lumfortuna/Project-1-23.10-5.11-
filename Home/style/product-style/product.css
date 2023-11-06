@@ -1,0 +1,391 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url(../assets/fonts/ClashDisplay-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.alert {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  background: #2A254B;
+  color: #FFF;
+  font-family: "Satoshi";
+  font-size: 14px;
+  line-height: normal;
+  max-width: 1440px;
+  padding: 8px 16px 9px 0;
+}
+.alert .alert__close {
+  background: #2A254B;
+  color: #FFF;
+  border: 0;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  height: 80px;
+}
+.header .header__logo {
+  color: #22202E;
+  font-family: "Clash Display";
+  font-size: 24px;
+  line-height: normal;
+  margin-left: 80px;
+}
+
+.header__nav_list {
+  display: inline-flex;
+}
+
+.header__nav_list a {
+  color: #726E8D;
+}
+
+.header__nav__item {
+  margin-right: 44px;
+  color: #726E8D;
+  font-family: "Satoshi";
+  font-size: 16px;
+}
+
+.header__other {
+  margin-right: 3%;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  grid-column-gap: 80px;
+  align-items: center;
+}
+.product .product_img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.product .product_img .product1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.product1__title {
+  color: #2A254B;
+  font-family: "Clash Display";
+  font-size: 36px;
+}
+
+.product1__price {
+  color: #12131A;
+  font-family: "Satoshi";
+  font-size: 24px;
+  line-height: normal;
+  margin-top: 3%;
+  font-style: normal;
+}
+
+.product1__description-title {
+  color: #2A254B;
+  font-family: "Clash Display";
+  font-size: 16px;
+  margin-top: 10%;
+  margin-bottom: 16px;
+}
+
+.product1__description {
+  color: #505977;
+  font-family: "Satoshi";
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 3%;
+  margin-right: 16%;
+}
+
+.product1__description-list {
+  color: #505977;
+  font-family: "Satoshi";
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 3%;
+}
+
+.product1__description-item {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.product1__dimension-title {
+  color: #2A254B;
+  font-family: "Clash Display";
+  font-size: larger;
+  line-height: normal;
+  margin-top: 10%;
+}
+
+.product1__dimension {
+  margin-top: 3%;
+  width: 35%;
+  margin-left: -2%;
+  font-size: larger;
+}
+.product1__dimension .name-product1__dimension {
+  color: #2A254B;
+  font-family: "Clash Display";
+  font-size: 14px;
+  line-height: normal;
+}
+.product1__dimension .value-product1__dimension {
+  color: #505977;
+  font-family: "Satoshi";
+  font-size: 16px;
+  line-height: normal;
+}
+
+.product1__amount-title {
+  color: #2A254B;
+  font-family: "Clash Display";
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 10%;
+}
+
+.stepper-product1__amount {
+  display: inline-block;
+  padding-left: 2%;
+}
+
+.product1__button {
+  background: #F9F9F9;
+  color: #2A254B;
+  font-family: "Satoshi";
+  font-size: 16px;
+  line-height: 150%;
+  margin-left: 35%;
+  width: 143px;
+  height: 56px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.product1__button:hover {
+  background-color: #726E8D;
+  color: #F9F9F9;
+}
+
+.main {
+  font-family: "Satoshi", sans-serif;
+  color: #2A254B;
+}
+
+h3 {
+  font-family: "ClashDisplay", sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: normal;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "about about about about" "delivery checkMarkOut purchase sprout" "ceramics ceramics ceramics ceramics" "item-card-1 item-card-2 item-card-3 item-card-4";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+  padding: 2%;
+  width: 1280px;
+}
+
+.about {
+  grid-area: about;
+  text-align: center;
+  width: 1280px;
+  padding-bottom: 3%;
+  padding-top: 2%;
+  margin-right: 5%;
+}
+
+.about_container {
+  padding-top: 5%;
+}
+
+.delivery {
+  grid-area: delivery;
+}
+
+.checkMarkOut {
+  grid-area: checkMarkOut;
+}
+
+.purchase {
+  grid-area: purchase;
+}
+
+.sprout {
+  grid-area: sprout;
+}
+
+.container__ceramics {
+  grid-area: ceramics;
+  padding: 2%;
+  width: 1280px;
+}
+
+.container__title, .title {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.container__item-card-1 {
+  grid-area: item-card-1;
+}
+
+.container__item-card-2 {
+  grid-area: item-card-2;
+}
+
+.container__item-card-3 {
+  grid-area: item-card-3;
+}
+
+.container__item-card-4 {
+  grid-area: item-card-4;
+}
+
+.aside {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #F9F9F9;
+}
+
+.club {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.join {
+  font-size: x-large;
+  padding-top: 5%;
+}
+
+.signUp {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5%;
+}
+
+.form-check {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 2%;
+  padding: 3%;
+}
+
+.form-control {
+  background-color: #F9F9F9;
+  border: 0px;
+  text-align: center;
+}
+
+button {
+  border: 0px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  color: #2A254B;
+  text-decoration: none;
+  background: #F9F9F9;
+  padding: 16px 32px;
+  outline: none;
+}
+
+.btn:hover {
+  color: #F9F9F9;
+  background: #726E8D;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgb(42, 37, 75);
+  height: 351px;
+  color: white;
+  padding: 2em 4em;
+  max-width: 1440px;
+  align-items: baseline;
+}
+
+footer > .address {
+  font-family: "Satoshi";
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+footer > .menu {
+  width: 20%;
+}
+
+footer > .categories {
+  width: 20%;
+}
+
+footer > .company {
+  width: 20%;
+}
+
+footer > .copyright {
+  flex-basis: 100%;
+  border-top: rgb(78, 77, 147) solid 0.1em;
+  text-align: start;
+  padding-top: 2em;
+}/*# sourceMappingURL=product.css.map */

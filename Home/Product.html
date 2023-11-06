@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/product-style/product.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--баннер-->
+    <div class="alert">
+      <div class="alert__delivery">
+        <img
+          class="image-alert__delivery"
+          alt="delivery"
+          src="./assets/img-product/delivery-transparent-white.svg"
+        />
+        Free delivery on all orders over £50 with code easter checkout
+      </div>
+      <button class="alert__close">X</button>
+    </div>
+    <!--баннер-->
+
+    <!--меню-->
+    <header class="header">
+      <div class="header__logo">Avion</div>
+      <nav class="header__nav">
+        <ul class="header__nav_list">
+          <a href="#"><li class="header__nav__item">Plant pots</li></a>
+          <a href="#"><li class="header__nav__item">Ceramics</li></a>
+          <a href="#"><li class="header__nav__item">Tables</li></a>
+          <a href="#"><li class="header__nav__item">Chairs</li></a>
+          <a href="#"><li class="header__nav__item">Crockery</li></a>
+          <a href="#"><li class="header__nav__item">Tableware</li></a>
+          <a href="#"><li class="header__nav__item">Cutlery</li></a>
+        </ul>
+      </nav>
+      <div class="header__other">
+        <a href="#"
+          ><img alt="search" src="./assets/img-product/Search.png"
+        /></a>
+        <a href="#"
+          ><img alt="cart" src="./assets/img-product/Shopping--cart.png"
+        /></a>
+        <a href="#"
+          ><img alt="user" src="./assets/img-product/User--avatar.png"
+        /></a>
+      </div>
+    </header>
+    <!--меню-->
+
+    <!--начало main-->
+    <div class="product">
+      <!--картинка-->
+      <div class="product_img">
+        <img
+          class="product__image"
+          alt="chair"
+          src="./assets/img-product/black_chair.jpg"
+        />
+      </div>
+      <!--картинка-->
+
+      <!--описание товара-->
+      <div class="product1">
+        <div class="product1__title">The Dandy Chair</div>
+        <div class="product1__price">£250</div>
+        <div class="product1__description-title">Description</div>
+        <div class="product1__description">
+          A timeless design, with premium materials features as one of our most
+          popular and iconic pieces. The dandy chair is perfect for any stylish
+          living space with beech legs and lambskin leather upholstery.
+        </div>
+        <div class="product1__description-list">
+          <ul class="product1__description-item">
+            <li>Premium material</li>
+            <li>Handmade upholstery</li>
+            <li>Quality timeless classic</li>
+          </ul>
+        </div>
+        <!--описание товара-->
+
+        <!--таблица-->
+        <div class="product1__dimension-title">Dimensions</div>
+        <table class="product1__dimension">
+          <tr class="name-product1__dimension">
+            <th class="item-product1__dimension">Height</th>
+            <th class="item-product1__dimension">Width</th>
+            <th class="item-product1__dimension">Depth</th>
+          </tr>
+          <tr class="value-product1__dimension">
+            <th class="item-product1__dimension">110cm</th>
+            <th class="item-product1__dimension">75cm</th>
+            <th class="item-product1__dimension">50cm</th>
+          </tr>
+        </table>
+        <!--таблица-->
+
+        <!--выбор количества товаров-->
+        <div class="product1__amount-title">
+          Amount:
+          <div class="stepper-product1__amount">
+            <input type="number" step="1" min="0" max="10" value="1" />
+          </div>
+          <button class="product1__button">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!--выбор количества товаров-->
+
+    <main class="main">
+      <article class="container">
+        <h3 class="container__ceramics">You might also like</h3>
+        <section class="container__item-card-1">
+          <img src="./assets/img-home/chair.small.jpg" alt="chair" />
+          <h4 class="container__title">The Dandy chair</h4>
+          <p class="price">£250</p>
+        </section>
+        <section class="container__item-card-2">
+          <img src="./assets/img-home/vase_set.jpg" alt="vase_set" />
+          <h4 class="container__title">Rustic Vase Set</h4>
+          <p class="price">£155</p>
+        </section>
+        <section class="container__item-card-3">
+          <img src="./assets/img-home/vase.jpg" alt="vase" />
+          <h4 class="container__title">The Silky Vase</h4>
+          <p class="price">£125</p>
+        </section>
+        <section class="container__item-card-4">
+          <img src="./assets/img-home/lamp.jpg" alt="lamp" />
+          <h4 class="container__title">The Lucy Lamp</h4>
+          <p class="price">£399</p>
+        </section>
+      </article>
+      <div class="button-wrapper">
+        <button class="btn">View collection</button>
+      </div>
+      <article class="container about_container">
+        <h3 class="about">What makes our brand different</h3>
+        <section class="delivery">
+          <img src="./assets/img-home/DeliveryIcon.svg" alt="Delivery" />
+          <h4 class="title">Next day as standard</h4>
+          <p>Order before 3pm and get your order the next day as standard</p>
+        </section>
+        <section class="checkMarkOut">
+          <img src="./assets/img-home/CheckmarkOutline.svg" alt="Checkmark" />
+          <h4 class="title">Made by true artisans</h4>
+          <p>Handmade crafted goods made with real passion and craftmanship</p>
+        </section>
+        <section class="purchase">
+          <img src="./assets/img-home/Purchase.svg" alt="Purchase" />
+          <h4 class="title">Unbeatable prices</h4>
+          <p>
+            For our materials and quality you won't find better prices anywhere
+          </p>
+        </section>
+        <section class="sprout">
+          <img src="./assets/img-home/Sprout.svg" alt="Sprout" />
+          <h4 class="title">Recycled packaging</h4>
+          <p>
+            We use 100% recycled packaging to ensure our footprint is manageable
+          </p>
+        </section>
+      </article>
+      <aside class="aside">
+        <section class="club">
+          <div class="join">Join the club and get the benefits</div>
+          <div class="signUp">
+            <p>
+              Sign up for our newsletter and receive exclusive offers on new
+              <br />
+              ranges, sales, pop up stores and more
+            </p>
+          </div>
+          <form class="form-check">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              placeholder="your@email.com"
+            />
+            <div class="button-wrapper">
+              <button class="btn">Sign up</button>
+            </div>
+          </form>
+        </section>
+      </aside>
+    </main>
+    <!--конец main-->
+
+    <footer>
+      <section class="address">
+        <h1 id="h1">Avion</h1>
+        <h3>21 New York street</h3>
+        <h3>New York City</h3>
+        <h3>United States of America</h3>
+        <h3>432 34</h3>
+      </section>
+      <section class="sociallinks">
+        <h2>Social links</h2>
+        <img src="./assets/img-home/skype.png" />
+        <img src="./assets/img-home/facebook.png" />
+        <img src="./assets/img-home/Lndn.png" />
+        <img src="./assets/img-home/twittwr.png" />
+        <img src="./assets/img-home/insta1.png" />
+        <img src="./assets/img-home/pinterest.png" />
+      </section>
+      <section class="menu">
+        <h2>Menu</h2>
+        <h3>New arrivals</h3>
+        <h3>Best sellers</h3>
+        <h3>Recently viewed</h3>
+        <h3>Polular this week</h3>
+        <h3>All products</h3>
+      </section>
+      <section class="categories">
+        <h2>Categories</h2>
+        <h3>Crockery</h3>
+        <h3>Furniture</h3>
+        <h3>Homeware</h3>
+        <h3>Plant pots</h3>
+        <h3>Chairs</h3>
+        <h3>Crockery</h3>
+      </section>
+      <section class="company">
+        <h2>Our company</h2>
+        <h3>About us</h3>
+        <h3>Vacancies</h3>
+        <h3>Contact us</h3>
+        <h3>Privacy</h3>
+        <h3>Returns policy</h3>
+      </section>
+      <p class="copyright">Copyright 2022 Avion LTD</p>
+    </footer>
+  </body>
+</html>
