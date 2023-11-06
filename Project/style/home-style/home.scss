@@ -1,3 +1,510 @@
 @import '../vars';
 @import '../template';
+@import '../min';
 
+
+
+.body_one {
+        display: grid;
+        grid-template-rows: 132px 704px;
+        }
+
+.header {
+    
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 70px;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 1440px;
+    padding-bottom: 0px;
+    
+    
+    
+        .header__search-block { ///Поисковая строка (группа)
+        grid-row: 1/2;
+        grid-column: 1/2;
+        border: none;
+        outline: none;
+        margin-left: 28px;
+        
+
+        .search{ /// Поле поиска
+            border: none;
+            outline: none;
+        }
+
+        .header__search-button { ///Кнопка поиска
+            border: none;
+            background-color: transparent;
+        }
+
+    }
+
+    .header__name { ///Имя
+        grid-row: 1/2;
+        font-family: 'Clash Display', sans-serif;
+        font-size: 24px;
+        color: $dark-primary;
+        grid-column: 2/3;
+        justify-self: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .header__info { ///Корзина и Юзер
+        grid-row: 1/2;
+        grid-column: 3/4;
+        justify-self: end;
+        margin-right: 28px;
+
+    }
+
+    .header__nav-block {  ///Навигация (блок)
+        grid-row: 2/3;
+        grid-column: 1/4;
+        display: flex;
+        align-items: center;
+        height: 62px;
+        width: 1386px;
+        border-top: 1px solid rgba(0, 0, 0, 0.10);
+        
+          li { ///Пункты навигации
+            display: inline-block;
+            font-family: 'Clash Display', sans-serif;
+            font-size: 16px;
+            color: $color3;
+            margin-right: 40px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+          
+        }
+        
+    }
+
+}
+
+.collection { ///Кусок main
+  grid-row: 2/3;
+  display: grid;
+  height: 584px;
+  grid-template-columns: 760px 584px;
+  padding-top: 60px;
+
+  
+    .collection__right{ ///Правая часть
+        grid-column: 1/2;
+        background-color: $dark-primary;
+        width: 760px;
+
+        .heading { ///Заголовок
+            margin-left: 60px;
+            margin-top: 60px;
+            margin-bottom: 41px;
+            font-family: 'Clash Display', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            color: #fff;
+        }
+
+        .button-view { ///Кнопка
+            margin-left: 60px;
+            font-family: 'Satoshi', sans-serif;
+            font-size: 16px;
+            width: 170px;
+            height: 56px;
+            color: $light-grey;
+            text-decoration: none;
+            background-color: $color5;
+            outline: none;
+            cursor: pointer;
+        
+        }
+
+        .button-view:hover {
+          color: $dark-primary;
+          background: $light-grey;
+        }
+
+        .description { ///Текст
+            margin-left: 60px;
+            font-family: 'Satoshi', sans-serif;
+            font-size: 18px;
+            color: #fff;
+            margin-top: 200px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+    
+
+    .chair { ///Картинка стула
+      grid-column: 2/3;
+        width: 520px;
+        height: 584px;
+        width: 100%;
+        @media screen and (max-width: 320px) {
+          display: none;
+          max-width: 320px;
+          margin: 0;
+      }
+
+
+    }
+}
+
+
+
+body {
+  max-width: 1280px;
+}
+h3,
+h4 {
+  font-weight: normal;
+}
+img {
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.main {
+  font-family: $font-t;
+  color: $dark-primary;
+  width: 1280px;
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    width: 100%;
+    margin: 0;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 480px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      row-gap: 2rem;
+      justify-content: start;
+      max-width: 480px;
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  &__container-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 480px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      max-width: 480px;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  &__container-products-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 480px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      max-width: 480px;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+}
+.container__title {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  font-family: $font-h;
+  @media screen and (max-width: 480px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.container-products__title {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  margin-left: 0px;
+  font-family: $font-h;
+  @media screen and (max-width: 480px) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}
+
+.container-products-1__title {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  margin-left: 0px;
+  font-family: $font-h;
+  @media screen and (max-width: 480px) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}
+.container-products-1__item_big {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+.aside {
+  display: flex;
+  width: 1280px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: $light-grey;
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    width: 100%;
+    margin-left: 0px;
+    background-color: white;
+  }
+  &__section {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  &__title {
+    font-size: x-large;
+    padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-family: $font-h;
+  }
+  &__description {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  &__form-check {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+  }
+}
+.form-control {
+  background-color: white;
+  border: 0px;
+  text-align: center;
+}
+.button-wrapper {
+  display: flex;
+  max-width: 1280px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    margin-left: 0px;
+  }
+}
+.button {
+  color: $dark-primary;
+  text-decoration: none;
+  background: $light-grey;
+  border: 0px;
+  padding: 16px 32px;
+  outline: none;
+  width: auto;
+  cursor: pointer;
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
+}
+.button:hover {
+  color: $light-grey;
+  background: $color3;
+}
+
+
+
+  .footer__about {
+    display: grid;
+    grid-template-columns: 720px 720px;
+    font-family: 'Satoshi', sans-serif;
+    color: $color4;
+    height: 603px ;
+       
+    .footer__about__text{
+      padding: 72px 100px 54px 84px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Satoshi', sans-serif;
+    
+         .footer__about__button{
+            margin-top: 196px;
+
+              .footer__about__btn{
+                 padding: 16px 32px;
+                 width: 150px;
+                 cursor: pointer;
+              
+                  .footer__about__img{
+                     grid-column: 2/3;
+                  }  
+               }      
+           } 
+        }
+    } 
+  
+    .footer__about__btn:hover{
+       color: $light-grey;
+       background: $color3;
+     }
+
+    .footer__about__text h2{
+        font-family: 'Clash Display';
+       font-size: 24px;
+       font-weight: normal;
+     }
+
+    .footer__about__text p {
+       margin-top: 4%;
+     }
+
+    .footer{
+       background-color: $dark-primary;
+       color: #FFFFFF;
+       padding-top: 58px;
+       padding-left: 80px;
+       padding-right: 80px;
+       max-width: 1440px;
+      }
+
+    .footer__menu{
+      font-family: 'Satoshi';
+      display: grid;
+      grid-template-columns: 10% 20% 15% 50%;
+      grid-template-rows: 100%;
+      padding-bottom: 3em;
+      align-items: baseline; 
+      font-size: 14px;
+      
+         .footer__link {
+           padding-top: 12px;
+       } 
+      }
+      
+    .footer__contacts { 
+      display: flex;
+      border-top: rgba(78, 77, 147, 1) solid 0.1em;
+      padding: 24px 0 25px 80px;
+      font-family: 'Satoshi';
+      justify-content: space-between;
+
+         .footer__text {
+           margin-left: -80px;
+        }
+       }
+
+    .footer a {
+      color: #ffff;
+       } 
+
+    .footer__nav_mail {
+       padding: 0;
+       margin-left: 10%;
+       width: 100%;
+       cursor: pointer;
+
+          .footer__mail__btn{
+            padding: 16px 32px;
+            cursor: pointer;
+            
+       }
+    }
+    .form-control {
+       background-color: #FFFFFF;
+       width: 80%;
+       opacity: 30%;
+       height: 3em;
+      }
+
+.footer__about__img{
+  @media screen and (max-width: 320px) {
+    max-width: 390px;
+    height: 350px;
+    
+    
+  }
+}
+
+.footer__nav_compdny{
+  @media screen and (max-width: 320px) {
+    grid-row: 2/3;
+  }
+}
+
+.footer__nav_menu{
+  @media screen and (max-width: 320px) {
+    grid-row: 1/2;
+}
+}
+
+.footer__nav_categories{
+  @media screen and (max-width: 320px) {
+    grid-row: 1/2;
+}
+}
+.footer__nav_mail{
+  @media screen and (max-width: 320px) {
+    grid-row: 3/4;
+}
+
+.footer__about{
+  @media screen and (max-width: 320px){
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+}
+}
+.footer__about__text{ 
+  @media screen and (max-width: 320px)
+  {max-width: 320px;
+   padding: 3%;}
+}
+.footer__menu{
+  @media screen and (max-width: 320px){
+    max-width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+}

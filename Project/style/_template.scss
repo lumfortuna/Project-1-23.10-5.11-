@@ -1,5 +1,12 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
 a { 
     text-decoration: none;
+    
 }
 
 ul {
@@ -7,7 +14,21 @@ ul {
 }
 
 .container {
-    max-width: 1280px;
+    
     width: 100%;
     margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url(../assets/fonts/ClashDisplay-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../assets/fonts/Satoshi-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }
